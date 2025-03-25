@@ -1,0 +1,49 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #3E5F3F;
+  color: #D8C3A5;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover{
+  color: #556B2F;
+}
+
+.logo {
+  max-width: 5%;
+}
+
+.cart-widget {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.item-list-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.banner {
+  max-width: 30%;
+}

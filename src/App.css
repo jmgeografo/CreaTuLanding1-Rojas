@@ -43,7 +43,35 @@ nav ul li a:hover{
   margin-top: 20px;
 }
 
-
 .banner {
   max-width: 30%;
+}
+
+nuestra-historia {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: left;
+  background-color: #EFE6DD;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(60, 60, 60, 0.1);
+}
+
+.nuestra-historia__titulo {
+  font-size: 2.5rem;
+  color: #3E5F3F;
+  margin-bottom: 20px;
+}
+
+.nuestra-historia__parrafo {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.nuestra-historia__agradecimiento {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 30px;
+  color: #5A7B4F;
 }

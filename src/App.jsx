@@ -1,13 +1,14 @@
-import { useState } from 'react'
-import umbriaBanner from './assets/bannerUmbria.jpg'
 import './App.css'
-import NavBar from './components/NavBar'
-import ItemListContainer from './components/ItemListContainer'
+import umbriaBanner from './assets/bannerUmbria.jpg'
+import NavBar from './components/Header/NavBar'
+import ItemListContainer from './pages/ItemListContainer'
+import History from './pages/History'
+import Contact from './pages/Contact'
+import ItemDetailContainer from './pages/ItemDetailContainer'
+import {Route, Routes } from 'react-router'
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
+    return (
     <>
       <div>
         <a href="https://umbria.cl" target="_blank">
@@ -17,7 +18,14 @@ function App() {
       <h1>Umbría - Protégete del cambio climático</h1>
     
       <NavBar/>
-      <ItemListContainer mensaje="¡Pronto tendremos cientos de productos pensados para ti!"/>
+      <Routes>
+        <Route path="/" element={<ItemListContainer/>}/>
+        <Route path="/products/:category" element={<ItemListContainer/>}/>
+        <Route path="/history" element={<History/>}/>
+        <Route path="/contact" element={<Contact/>}/>
+        <Route path="/item/:id" element={<ItemDetailContainer/>}/>
+        <Route path="*" element={<h1>Page not Found - Error 404</h1>}/>
+      </Routes>
     </>
   )
 }

@@ -35,7 +35,7 @@ const ItemDetailContainer = () => {
                 <h2>Producto:{detail.name}</h2>
                 <p>{detail.description}</p>
                 <h3>Stock:{detail.stock}</h3>
-                <h3>Price: ${detail.price.toLocaleString('es-CL')}CLP</h3>
+                <h3> Price: {typeof detail.price === 'number' ? `$${detail.price.toLocaleString('es-CL')} CLP` : 'Precio no disponible'}</h3>
             
             {added ? (
                 <Link to="/cart">

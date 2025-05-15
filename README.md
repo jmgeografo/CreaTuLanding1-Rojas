@@ -4,7 +4,7 @@
 ### Tecnologías utilizadas
 * React
 * JavaScript
-*CSS
+* CSS
 * Firebase y Firestore
 * React Router Dom
 * SweetAlert2

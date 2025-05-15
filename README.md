@@ -1,12 +1,38 @@
-# React + Vite
+# Umbría
+## Esta es la tienda Umbría, creada para el curso React-Flex de Coderhouse.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Tecnologías utilizadas
+* React
+* JavaScript
+*CSS
+* Firebase y Firestore
+* React Router Dom
+* SweetAlert2
 
-Currently, two official plugins are available:
+### Guía de instalación
+1. Clonar e instalar dependencias
+```
+git clone https://github.com/jmgeografo/CreaTuLanding1-Rojas.git
+npm install
+```
+2. Levantar el proyecto
+```
+npm run dev
+```
+3. Configurar Firebase
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Crea un proyecto en [Firebase Console](https://console.firebase.google.com/) y luego copia tus credenciales en `firebaseConfig.js`:
 
-## Expanding the ESLint configuration
+```js
+const firebaseConfig = {
+  apiKey: "TU_API_KEY",
+  authDomain: "TU_AUTH_DOMAIN",
+  projectId: "TU_PROJECT_ID",
+  storageBucket: "TU_STORAGE_BUCKET",
+  messaginSenderId: "TU_MESSAGIN_SENDER_ID",
+  appId: "TU_APP_ID"
+};
+```
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Deploy
+*La tienda está deplyada en [Vercel](https://crea-tu-landing1-rojas.vercel.app/)*

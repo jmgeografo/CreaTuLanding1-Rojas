@@ -1,17 +1,16 @@
-import React, {useState} from "react"
+import { Link } from 'react-router'
+import { useGlobalStates } from '../../context/Context'
 
 const CartWidget = () => {
-
-    const [cart, setCart] = useState(0)
-
+    const { calcularItems } = useGlobalStates()
     return (
-        <div className="cart-widget">
-        <button onClick ={() => setCart(cart - 1)}>-</button>
-        🛒 <span>{cart}</span>
-        <button onClick ={() => setCart(cart + 1)}>+</button>
-        </div>
-    );
-};
-    
+    <div>
+        <Link to='/cart'>
+        🛒<span>{calcularItems}</span>
+        </Link>
+    </div>
+    )
+}
+
 export default CartWidget
 
